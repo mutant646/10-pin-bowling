@@ -168,6 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63283d01ecd3be541bcc1ed1a73d374b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 237888048}
 --- !u!1 &185358272
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,6 +293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63283d01ecd3be541bcc1ed1a73d374b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 237888048}
 --- !u!1 &237888047
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,7 +305,7 @@ GameObject:
   - component: {fileID: 237888049}
   - component: {fileID: 237888048}
   m_Layer: 0
-  m_Name: Gamemaker
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -316,7 +318,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 237888047}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db4dee2093d827a4ab215b70949c420f, type: 3}
   m_Name: 
@@ -332,12 +334,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 237888047}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.09218, y: 0.04084, z: 0.37863}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.2677197, y: 0.01584, z: 0.54198}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1234315574}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &283783790
 PrefabInstance:
@@ -390,6 +392,10 @@ PrefabInstance:
     - target: {fileID: -3379061926568591603, guid: 4edc4dbaa39d1f54a87fc4865ea439d1, type: 3}
       propertyPath: m_Center.z
       value: 0.0013859347
+      objectReference: {fileID: 0}
+    - target: {fileID: -3379061926568591603, guid: 4edc4dbaa39d1f54a87fc4865ea439d1, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4774837475426630767, guid: 4edc4dbaa39d1f54a87fc4865ea439d1, type: 3}
       propertyPath: m_LocalScale.x
@@ -449,7 +455,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5262581294792353493, guid: 4edc4dbaa39d1f54a87fc4865ea439d1, type: 3}
       propertyPath: m_TagString
-      value: Respawn
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -514,6 +520,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0.0013859347
       objectReference: {fileID: 0}
+    - target: {fileID: -3379061926568591603, guid: 4edc4dbaa39d1f54a87fc4865ea439d1, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4774837475426630767, guid: 4edc4dbaa39d1f54a87fc4865ea439d1, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -572,7 +582,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5262581294792353493, guid: 4edc4dbaa39d1f54a87fc4865ea439d1, type: 3}
       propertyPath: m_TagString
-      value: Respawn
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1073,6 +1083,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0.0013859347
       objectReference: {fileID: 0}
+    - target: {fileID: -3379061926568591603, guid: 4edc4dbaa39d1f54a87fc4865ea439d1, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4774837475426630767, guid: 4edc4dbaa39d1f54a87fc4865ea439d1, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -1131,7 +1145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5262581294792353493, guid: 4edc4dbaa39d1f54a87fc4865ea439d1, type: 3}
       propertyPath: m_TagString
-      value: Respawn
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1293,6 +1307,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0.0013859347
       objectReference: {fileID: 0}
+    - target: {fileID: -3379061926568591603, guid: 4edc4dbaa39d1f54a87fc4865ea439d1, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4774837475426630767, guid: 4edc4dbaa39d1f54a87fc4865ea439d1, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -1351,7 +1369,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5262581294792353493, guid: 4edc4dbaa39d1f54a87fc4865ea439d1, type: 3}
       propertyPath: m_TagString
-      value: Respawn
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1416,6 +1434,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0.0013859347
       objectReference: {fileID: 0}
+    - target: {fileID: -3379061926568591603, guid: 4edc4dbaa39d1f54a87fc4865ea439d1, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4774837475426630767, guid: 4edc4dbaa39d1f54a87fc4865ea439d1, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -1474,7 +1496,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5262581294792353493, guid: 4edc4dbaa39d1f54a87fc4865ea439d1, type: 3}
       propertyPath: m_TagString
-      value: Respawn
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1646,6 +1668,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0.0013859347
       objectReference: {fileID: 0}
+    - target: {fileID: -3379061926568591603, guid: 4edc4dbaa39d1f54a87fc4865ea439d1, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4774837475426630767, guid: 4edc4dbaa39d1f54a87fc4865ea439d1, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -1704,7 +1730,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5262581294792353493, guid: 4edc4dbaa39d1f54a87fc4865ea439d1, type: 3}
       propertyPath: m_TagString
-      value: Respawn
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1905,6 +1931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63283d01ecd3be541bcc1ed1a73d374b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 237888048}
 --- !u!1 &1234315573
 GameObject:
   m_ObjectHideFlags: 0
@@ -1915,7 +1942,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1234315574}
   m_Layer: 0
-  m_Name: bowling set
+  m_Name: Pin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1934,6 +1961,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 237888049}
   - {fileID: 198182585}
   - {fileID: 1984349555}
   - {fileID: 1859909686}
@@ -2003,7 +2031,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2012,8 +2040,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2170,6 +2198,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0.0013859347
       objectReference: {fileID: 0}
+    - target: {fileID: -3379061926568591603, guid: 4edc4dbaa39d1f54a87fc4865ea439d1, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4774837475426630767, guid: 4edc4dbaa39d1f54a87fc4865ea439d1, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -2228,7 +2260,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5262581294792353493, guid: 4edc4dbaa39d1f54a87fc4865ea439d1, type: 3}
       propertyPath: m_TagString
-      value: Respawn
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2290,6 +2322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63283d01ecd3be541bcc1ed1a73d374b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 237888048}
 --- !u!1 &1474918463
 GameObject:
   m_ObjectHideFlags: 0
@@ -2520,6 +2553,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0.0013859347
       objectReference: {fileID: 0}
+    - target: {fileID: -3379061926568591603, guid: 4edc4dbaa39d1f54a87fc4865ea439d1, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4774837475426630767, guid: 4edc4dbaa39d1f54a87fc4865ea439d1, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -2578,7 +2615,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5262581294792353493, guid: 4edc4dbaa39d1f54a87fc4865ea439d1, type: 3}
       propertyPath: m_TagString
-      value: Respawn
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2730,6 +2767,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63283d01ecd3be541bcc1ed1a73d374b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 237888048}
 --- !u!1 &1718040837
 GameObject:
   m_ObjectHideFlags: 0
@@ -2861,6 +2899,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0.0013859347
       objectReference: {fileID: 0}
+    - target: {fileID: -3379061926568591603, guid: 4edc4dbaa39d1f54a87fc4865ea439d1, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4774837475426630767, guid: 4edc4dbaa39d1f54a87fc4865ea439d1, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -2919,7 +2961,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5262581294792353493, guid: 4edc4dbaa39d1f54a87fc4865ea439d1, type: 3}
       propertyPath: m_TagString
-      value: Respawn
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2981,6 +3023,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63283d01ecd3be541bcc1ed1a73d374b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 237888048}
 --- !u!1 &1847495207
 GameObject:
   m_ObjectHideFlags: 0
@@ -3105,6 +3148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63283d01ecd3be541bcc1ed1a73d374b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 237888048}
 --- !u!1 &1956593481 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5262581294792353493, guid: 4edc4dbaa39d1f54a87fc4865ea439d1, type: 3}
@@ -3154,6 +3198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63283d01ecd3be541bcc1ed1a73d374b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 237888048}
 --- !u!1 &1984349552 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5262581294792353493, guid: 4edc4dbaa39d1f54a87fc4865ea439d1, type: 3}
@@ -3203,6 +3248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63283d01ecd3be541bcc1ed1a73d374b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 237888048}
 --- !u!1 &2011556668 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5262581294792353493, guid: 4edc4dbaa39d1f54a87fc4865ea439d1, type: 3}
@@ -3252,6 +3298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63283d01ecd3be541bcc1ed1a73d374b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 237888048}
 --- !u!1001 &3167400590271890494
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3303,6 +3350,10 @@ PrefabInstance:
     - target: {fileID: -3379061926568591603, guid: 4edc4dbaa39d1f54a87fc4865ea439d1, type: 3}
       propertyPath: m_Center.z
       value: 0.0013859347
+      objectReference: {fileID: 0}
+    - target: {fileID: -3379061926568591603, guid: 4edc4dbaa39d1f54a87fc4865ea439d1, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4774837475426630767, guid: 4edc4dbaa39d1f54a87fc4865ea439d1, type: 3}
       propertyPath: m_LocalScale.x
@@ -3362,7 +3413,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5262581294792353493, guid: 4edc4dbaa39d1f54a87fc4865ea439d1, type: 3}
       propertyPath: m_TagString
-      value: Respawn
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3387,6 +3438,5 @@ SceneRoots:
   - {fileID: 1474918467}
   - {fileID: 1718040840}
   - {fileID: 961689231}
-  - {fileID: 237888049}
   - {fileID: 667375241}
   - {fileID: 1177512125}
