@@ -1,30 +1,68 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
+using System.Runtime.CompilerServices;
+using JetBrains.Annotations;
+using Unity.VisualScripting;
 
 public class charging : MonoBehaviour
 {
-    public Slider powerSlider;
-    public float charge = 0;
+    private Slider powerSlider;
+    private float charge = 0.1f;
+    private bool Charging;
+    private bool atTop = false;
+    public bool start = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-    Slider powerSlider = GetComponent("powerSlider") as Slider;
+        powerSlider = GetComponent<Slider>();
+        powerSlider.value = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) == true)
+       bool spaceBarPressed = Input.GetKeyDown(KeyCode.Space);
+        bool spaceBarUp = Input.GetKeyUp(KeyCode.Space);
+        if (spaceBarPressed)
         {
-            while (Input.GetKeyDown(KeyCode.Space) == true)
+            Charging = true;
+            Debug.Log("Started charging.");
+        }
+
+        if (spaceBarUp) {
+          if (charge > 0)
             {
-                charge = charge + 0.05f;
-                if (charge > 2.5)
-                {
-                    charge = 0;
-                }
-                powerSlider.value = charge;
+                Charging = false;
+                start = true;
+                Debug.Log("charging stopped. sending ball.");
             }
+        }
+
+        if (Charging == true)
+        {
+            if (atTop == false)
+            {
+                powerSlider.value += 0.01f;
+                if (powerSlider.value > 2.5)
+                {
+                    atTop = true;
+                    Debug.Log("at top, sending down.");
+                    powerSlider.value -= 0.02f;
+                }
+            }
+            if (atTop == true)
+            {
+                powerSlider.value -= 0.01f;
+                if (powerSlider.value < 0)
+                {
+                    atTop = false;
+                    Debug.Log("at bottom, sending up.");
+                    powerSlider.value += 0.02f;
+                }
+            }
+
         }
     }
 }

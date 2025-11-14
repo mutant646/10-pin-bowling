@@ -7,24 +7,18 @@ public class rolling : MonoBehaviour
 {
     public float speed = 0;
     private Rigidbody rb;
+    public charging startRoll;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
   rb = GetComponent<Rigidbody>();
+   startRoll = GetComponent<charging>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        bool spaceBarDown = Input.GetKeyDown(KeyCode.Space);
-
-
-        if (spaceBarDown == true)
-        {
-           
-        }
-
-
+       
     }
         
            
