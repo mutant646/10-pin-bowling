@@ -1,3 +1,4 @@
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class cameraControl : MonoBehaviour
@@ -13,6 +14,13 @@ public class cameraControl : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        transform.position = bowlingBall.transform.position + offset;
+        if (transform.position.x > 0.4)
+        {
+
+        }
+        else
+        {
+            transform.position = bowlingBall.transform.position + offset;
+        }
     }
 }
