@@ -271,7 +271,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edbf0e2e039b0d144a10ccb3045d21c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  freezeCharge: 0
   start: 0
+  rolling: {fileID: 667375236}
 --- !u!1 &71366011
 GameObject:
   m_ObjectHideFlags: 0
@@ -1708,8 +1710,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 965c3c5122865c940a161c1493eea1db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
-  startRoll: {fileID: 0}
+  charging: {fileID: 63296798}
 --- !u!54 &667375237
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5229,7 +5230,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 750158399}
-  - {fileID: 667375241}
   - {fileID: 534338744}
   - {fileID: 649709084}
   - {fileID: 1641719595}
@@ -5237,3 +5237,4 @@ SceneRoots:
   - {fileID: 2055504034}
   - {fileID: 1110474992}
   - {fileID: 961689231}
+  - {fileID: 667375241}

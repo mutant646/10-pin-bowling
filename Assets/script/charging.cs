@@ -4,19 +4,22 @@ using UnityEngine.InputSystem;
 using System.Runtime.CompilerServices;
 using JetBrains.Annotations;
 using Unity.VisualScripting;
+using static UnityEngine.Rendering.DebugUI;
 
 public class charging : MonoBehaviour
 {
     private Slider powerSlider;
     private float charge = 0.1f;
+    public float freezeCharge;
     private bool Charging;
     private bool atTop = false;
     public bool start = false;
+    public rolling rolling;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        powerSlider = GetComponent<Slider>();
+        powerSlider = GetComponent<Slider>(); 
         powerSlider.value = 0;
     }
 
@@ -35,8 +38,11 @@ public class charging : MonoBehaviour
           if (charge > 0)
             {
                 Charging = false;
-                start = true;
+
+                freezeCharge = powerSlider.value; 
+                rolling.StartingRoll();
                 Debug.Log("charging stopped. sending ball.");
+                    powerSlider.value = 0;
             }
         }
 
@@ -48,7 +54,7 @@ public class charging : MonoBehaviour
                 if (powerSlider.value > 2.5)
                 {
                     atTop = true;
-                    Debug.Log("at top, sending down.");
+                    
                     powerSlider.value -= 0.02f;
                 }
             }
@@ -58,7 +64,6 @@ public class charging : MonoBehaviour
                 if (powerSlider.value < 0)
                 {
                     atTop = false;
-                    Debug.Log("at bottom, sending up.");
                     powerSlider.value += 0.02f;
                 }
             }
