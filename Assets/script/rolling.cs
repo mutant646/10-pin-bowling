@@ -136,6 +136,9 @@ public class PlayerMovement : MonoBehaviour
 =======
    
    
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 }

@@ -1,6 +1,10 @@
 using UnityEngine;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 using UnityEngine.UI;
+=======
+using TMPro;
+>>>>>>> Stashed changes
 =======
 using TMPro;
 >>>>>>> Stashed changes
@@ -10,9 +14,15 @@ public class GameManager : MonoBehaviour
 {
     [Header("References")]
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     public PlayerMovement playerMovement;
     public Transform ballStartPoint;
     public Text scoreText;
+=======
+    public rolling  rolling;
+    public Transform ballStartPoint;
+    public TMP_Text scoreText;
+>>>>>>> Stashed changes
 =======
     public rolling  rolling;
     public Transform ballStartPoint;
@@ -52,6 +62,7 @@ public class GameManager : MonoBehaviour
     {
         throwCount++;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
         if (pinsDown >= 10) // strike
         {
@@ -64,6 +75,11 @@ public class GameManager : MonoBehaviour
         else
         {
           
+=======
+        {
+            EndRound(true);
+
+>>>>>>> Stashed changes
 =======
         {
             EndRound(true);
@@ -115,6 +131,7 @@ public class GameManager : MonoBehaviour
     private void ResetBall()
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         if (playerMovement != null && ballStartPoint != null)
         {
             Rigidbody rb = playerMovement.GetComponent<Rigidbody>();
@@ -124,6 +141,8 @@ public class GameManager : MonoBehaviour
             playerMovement.transform.rotation = ballStartPoint.rotation;
             playerMovement.enabled = true;
 =======
+=======
+>>>>>>> Stashed changes
         if (rolling != null && ballStartPoint != null)
         {
             Rigidbody rb = rolling.GetComponent<Rigidbody>();
@@ -132,6 +151,9 @@ public class GameManager : MonoBehaviour
             rolling.transform.position = ballStartPoint.position;
             rolling.transform.rotation = ballStartPoint.rotation;
             rolling.enabled = true;
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         }
     }

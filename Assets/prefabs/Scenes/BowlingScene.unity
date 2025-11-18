@@ -138,7 +138,11 @@ Rigidbody:
   m_GameObject: {fileID: 57560808}
   serializedVersion: 5
 <<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
+<<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
   m_Mass: 1
+=======
+  m_Mass: 1.5
+>>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
 =======
   m_Mass: 1.5
 >>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
@@ -160,8 +164,12 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
 <<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
+<<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
   m_CollisionDetection: 0
 <<<<<<< HEAD:Assets/prefabs/Scenes/BowlingScene.unity
+=======
+  m_CollisionDetection: 1
+>>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
 =======
   m_CollisionDetection: 1
 >>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
@@ -178,6 +186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 <<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
+<<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
   gameManager: {fileID: 237888048}
 =======
 <<<<<<< HEAD
@@ -187,6 +196,8 @@ MonoBehaviour:
 --- !u!1 &174322924
 >>>>>>> Lewis
 =======
+=======
+>>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
   startPosition: {x: 10.4, y: 0.09, z: 0.16335}
   startRotation: {x: 0, y: 0, z: 0, w: 0}
   gameManager: {fileID: 149284124}
@@ -700,7 +711,11 @@ Rigidbody:
   m_GameObject: {fileID: 198182582}
   serializedVersion: 5
 <<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
+<<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
   m_Mass: 1
+=======
+  m_Mass: 1.5
+>>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
 =======
   m_Mass: 1.5
 >>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
@@ -734,6 +749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63283d01ecd3be541bcc1ed1a73d374b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
 <<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
   gameManager: {fileID: 237888048}
 --- !u!1 &237888047
@@ -783,6 +799,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1234315574}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+  startPosition: {x: 9.66, y: 0.09, z: 0.16335}
+  startRotation: {x: 0, y: 0, z: 0, w: 1}
+  gameManager: {fileID: 149284124}
+>>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
 =======
   startPosition: {x: 9.66, y: 0.09, z: 0.16335}
   startRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -2115,6 +2136,9 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+<<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
+>>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
+=======
 >>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
 --- !u!1001 &916045904
 PrefabInstance:
@@ -2766,7 +2790,11 @@ Rigidbody:
   m_GameObject: {fileID: 1185698813}
   serializedVersion: 5
 <<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
+<<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
   m_Mass: 1
+=======
+  m_Mass: 1.5
+>>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
 =======
   m_Mass: 1.5
 >>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
@@ -2801,8 +2829,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 <<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
+<<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
   gameManager: {fileID: 237888048}
 =======
+=======
+>>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
   startPosition: {x: 10.77, y: 0.09, z: 0.27335}
   startRotation: {x: 0, y: 0, z: 0, w: 0}
   gameManager: {fileID: 149284124}
@@ -3017,6 +3048,9 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+<<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
+>>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
+=======
 >>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
 --- !u!1 &1234315573
 GameObject:
@@ -4403,6 +4437,9 @@ RectTransform:
   - {fileID: 1839523543}
   - {fileID: 1688336463}
   - {fileID: 1220821425}
+<<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
+>>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
+=======
 >>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5274,7 +5311,11 @@ Rigidbody:
   m_GameObject: {fileID: 1587537188}
   serializedVersion: 5
 <<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
+<<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
   m_Mass: 1
+=======
+  m_Mass: 1.5
+>>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
 =======
   m_Mass: 1.5
 >>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
@@ -5309,9 +5350,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 <<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
+<<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
   gameManager: {fileID: 237888048}
 --- !u!1 &1718040837
 =======
+=======
+>>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
   startPosition: {x: 10.77, y: 0.09, z: 0.49335}
   startRotation: {x: 0, y: 0, z: 0, w: 0}
   gameManager: {fileID: 149284124}
@@ -5552,7 +5596,11 @@ Rigidbody:
   m_GameObject: {fileID: 1819132913}
   serializedVersion: 5
 <<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
+<<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
   m_Mass: 1
+=======
+  m_Mass: 1.5
+>>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
 =======
   m_Mass: 1.5
 >>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
@@ -5574,8 +5622,12 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
 <<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
+<<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
   m_CollisionDetection: 0
 <<<<<<< HEAD:Assets/prefabs/Scenes/BowlingScene.unity
+=======
+  m_CollisionDetection: 1
+>>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
 =======
   m_CollisionDetection: 1
 >>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
@@ -5592,6 +5644,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 <<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
+<<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
   gameManager: {fileID: 237888048}
 =======
 <<<<<<< HEAD
@@ -5601,6 +5654,8 @@ MonoBehaviour:
 --- !u!1 &1859054704
 >>>>>>> Lewis
 =======
+=======
+>>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
   startPosition: {x: 10.4, y: 0.09, z: -0.05464999}
   startRotation: {x: 0, y: 0, z: 0, w: 0}
   gameManager: {fileID: 149284124}
@@ -5724,7 +5779,11 @@ Rigidbody:
   m_GameObject: {fileID: 1859909683}
   serializedVersion: 5
 <<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
+<<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
   m_Mass: 1
+=======
+  m_Mass: 1.5
+>>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
 =======
   m_Mass: 1.5
 >>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
@@ -5759,8 +5818,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 <<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
+<<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
   gameManager: {fileID: 237888048}
 =======
+=======
+>>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
   startPosition: {x: 10.03, y: 0.09, z: 0.27335}
   startRotation: {x: 0, y: 0, z: 0, w: 0}
   gameManager: {fileID: 149284124}
@@ -5905,7 +5967,11 @@ Rigidbody:
   m_GameObject: {fileID: 1956593481}
   serializedVersion: 5
 <<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
+<<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
   m_Mass: 1
+=======
+  m_Mass: 1.5
+>>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
 =======
   m_Mass: 1.5
 >>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
@@ -5940,7 +6006,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 <<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
+<<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
   gameManager: {fileID: 237888048}
+=======
+  startPosition: {x: 10.77, y: 0.09, z: 0.05535}
+  startRotation: {x: 0, y: 0, z: 0, w: 0}
+  gameManager: {fileID: 149284124}
+>>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
 =======
   startPosition: {x: 10.77, y: 0.09, z: 0.05535}
   startRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -5965,7 +6037,11 @@ Rigidbody:
   m_GameObject: {fileID: 1984349552}
   serializedVersion: 5
 <<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
+<<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
   m_Mass: 1
+=======
+  m_Mass: 1.5
+>>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
 =======
   m_Mass: 1.5
 >>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
@@ -6000,8 +6076,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 <<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
+<<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
   gameManager: {fileID: 237888048}
 =======
+=======
+>>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
   startPosition: {x: 10.03, y: 0.09, z: 0.05535}
   startRotation: {x: 0, y: 0, z: 0, w: 1}
   gameManager: {fileID: 149284124}
@@ -6198,7 +6277,11 @@ Rigidbody:
   m_GameObject: {fileID: 2011556668}
   serializedVersion: 5
 <<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
+<<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
   m_Mass: 1
+=======
+  m_Mass: 1.5
+>>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
 =======
   m_Mass: 1.5
 >>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
@@ -6233,8 +6316,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 <<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
+<<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
   gameManager: {fileID: 237888048}
 =======
+=======
+>>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
   startPosition: {x: 10.77, y: 0.09, z: -0.16465}
   startRotation: {x: 0, y: 0, z: 0, w: 0}
   gameManager: {fileID: 149284124}
@@ -6782,6 +6868,7 @@ SceneRoots:
   - {fileID: 961689231}
   - {fileID: 667375241}
 <<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
+<<<<<<< Updated upstream:Assets/prefabs/Scenes/BowlingScene.unity
   - {fileID: 1177512125}
 =======
   - {fileID: 667375241}
@@ -6794,6 +6881,10 @@ SceneRoots:
   - {fileID: 470470746}
 >>>>>>> Lewis
 >>>>>>> bbe597960fa91f206c806d548c11f4357f7e6791:Assets/Scenes/BowlingScene.unity
+=======
+  - {fileID: 149284125}
+  - {fileID: 856261655}
+>>>>>>> Stashed changes:Assets/Scenes/BowlingScene.unity
 =======
   - {fileID: 149284125}
   - {fileID: 856261655}
