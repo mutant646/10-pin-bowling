@@ -1,13 +1,23 @@
 using UnityEngine;
+<<<<<<< Updated upstream
 using UnityEngine.UI;
+=======
+using TMPro;
+>>>>>>> Stashed changes
 using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
     [Header("References")]
+<<<<<<< Updated upstream
     public PlayerMovement playerMovement;
     public Transform ballStartPoint;
     public Text scoreText;
+=======
+    public rolling  rolling;
+    public Transform ballStartPoint;
+    public TMP_Text scoreText;
+>>>>>>> Stashed changes
 
     private int pinsDown = 0;
     private int throwCount = 0;   
@@ -41,6 +51,7 @@ public class GameManager : MonoBehaviour
     private void EndThrow()
     {
         throwCount++;
+<<<<<<< Updated upstream
 
         if (pinsDown >= 10) // strike
         {
@@ -53,6 +64,11 @@ public class GameManager : MonoBehaviour
         else
         {
           
+=======
+        {
+            EndRound(true);
+
+>>>>>>> Stashed changes
             ResetBall();
         }
     }
@@ -98,6 +114,7 @@ public class GameManager : MonoBehaviour
 
     private void ResetBall()
     {
+<<<<<<< Updated upstream
         if (playerMovement != null && ballStartPoint != null)
         {
             Rigidbody rb = playerMovement.GetComponent<Rigidbody>();
@@ -106,6 +123,16 @@ public class GameManager : MonoBehaviour
             playerMovement.transform.position = ballStartPoint.position;
             playerMovement.transform.rotation = ballStartPoint.rotation;
             playerMovement.enabled = true;
+=======
+        if (rolling != null && ballStartPoint != null)
+        {
+            Rigidbody rb = rolling.GetComponent<Rigidbody>();
+            rb.linearVelocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+            rolling.transform.position = ballStartPoint.position;
+            rolling.transform.rotation = ballStartPoint.rotation;
+            rolling.enabled = true;
+>>>>>>> Stashed changes
         }
     }
 }

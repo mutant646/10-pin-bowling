@@ -95,6 +95,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
+<<<<<<< Updated upstream
 
     void LaunchBall()
 
@@ -132,6 +133,10 @@ public class PlayerMovement : MonoBehaviour
         return angle;
 
     }
+=======
+   
+   
+>>>>>>> Stashed changes
 
 }
 
