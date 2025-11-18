@@ -25,7 +25,7 @@ public class rolling : MonoBehaviour
     {
         speed = charging.freezeCharge;           
             Debug.Log("start recieved, sending vector now.");
-            Vector3 bowl = new Vector3(1500, 0, 0);
+            Vector3 bowl = new Vector3(1500, 0, 750);
         Debug.Log(bowl);
         Debug.Log(speed);
         rb.AddForce(bowl * speed);
