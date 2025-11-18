@@ -9,6 +9,7 @@ public class rolling : MonoBehaviour
     public charging charging;
     private float speed = 0;
     private Rigidbody rb;
+    float AngleY = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,18 +20,45 @@ public class rolling : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (speed == 0)
+        {
+            if (Input.GetKey(KeyCode.Q))
+            {
+                if (AngleY > -0.3f)
+                {
+                    AngleY -= 0.006f;
+                    transform.Rotate(new Vector3(0, -1f, 0));
+                }
+            }
+            if (Input.GetKey(KeyCode.A))
+            {
+                transform.position = new Vector3(-6.619f, 0.108f, transform.position.z + 0.0001f);
+            }
+            if (Input.GetKey(KeyCode.E))
+            {
+                if (AngleY < 0.3f)
+                {
+                    AngleY += 0.006f;
+                    transform.Rotate(new Vector3(0, 1f, 0));
+                }
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                transform.position = new Vector3(-6.619f, 0.108f, transform.position.z - 0.0001f);
+            }
+        }
     }
 
     public void StartingRoll()
     {
         speed = charging.freezeCharge;           
             Debug.Log("start recieved, sending vector now.");
-            Vector3 bowl = new Vector3(1500, 0, 750);
+            Vector3 bowl = new Vector3(150, 0, (-AngleY * 150));
         Debug.Log(bowl);
         Debug.Log(speed);
-        rb.AddForce(bowl * speed);
+        rb.AddForce(bowl * speed * 10);
             Debug.Log("Vector applied.");     
-         
+            
        
     }    
         
