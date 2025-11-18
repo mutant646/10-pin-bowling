@@ -50,7 +50,7 @@ public class charging : MonoBehaviour
         {
             if (atTop == false)
             {
-                powerSlider.value += 0.005f;
+                powerSlider.value += 0.01f;
                 if (powerSlider.value > 2.5)
                 {
                     atTop = true;
@@ -60,7 +60,7 @@ public class charging : MonoBehaviour
             }
             if (atTop == true)
             {
-                powerSlider.value -= 0.005f;
+                powerSlider.value -= 0.01f;
                 if (powerSlider.value < 0.5)
                 {
                     atTop = false;
