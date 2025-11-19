@@ -1,20 +1,47 @@
 using UnityEngine;
 
-public class pinReplacing : MonoBehaviour
+public class Pin : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public Vector3 startPosition;
+    public Quaternion startRotation;
+    private bool hasFallen = false;
+    [SerializeField] private GameManager gameManager; // drag in Inspector
+
     void Start()
     {
-        
+
+        // fallback if you forgot to assign
+        if (gameManager == null)
+        {
+            gameManager = Object.FindFirstObjectByType<GameManager>();
+        }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (!hasFallen && transform.up.y < 0.5f)
+        {
+            hasFallen = true;
+            Debug.Log($"{gameObject.name} fell over"); // confirm detection
+
+            if (gameManager != null)
+            {
+                gameManager.AddPinDown();
+            }
+            else
+            {
+                Debug.LogError("GameManager is NULL on " + gameObject.name);
+            }
+        }
     }
-    private void OnTriggerEnter(Collider other)
+
+    public void ResetPin()
     {
-        Destroy(gameObject);
+        hasFallen = false;
+        transform.position = startPosition;
+        transform.rotation = startRotation;
+        Rigidbody rb = GetComponent<Rigidbody>();
+        rb.linearVelocity = Vector3.zero;
+        rb.angularVelocity = Vector3.zero;
     }
 }
