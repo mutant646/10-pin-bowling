@@ -7,7 +7,7 @@ using UnityEngine.UIElements;
 public class rolling : MonoBehaviour
 {
     public charging charging;
-    private float speed = 0;
+    public float speed = 0;
     private Rigidbody rb;
     float AngleY = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -67,8 +67,8 @@ public class rolling : MonoBehaviour
    
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject);
+        transform.position = new Vector3(-10, 0, 0);
     }
-
+   
 
 }
