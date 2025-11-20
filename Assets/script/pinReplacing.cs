@@ -20,10 +20,10 @@ public class Pin : MonoBehaviour
     {
 
         // fallback if you forgot to assign
-        if (gameManager == null)
-        {
-            gameManager = Object.FindFirstObjectByType<GameManager>();
-        }
+       // if (gameManager == null)
+       // {
+       //     gameManager = Object.FindFirstObjectByType<GameManager>();
+       // }
        
     }
 
@@ -42,15 +42,15 @@ public class Pin : MonoBehaviour
         {
             hasFallen = true;
             
-            Debug.Log($"{gameObject.name} fell over"); // confirm detection
+           // Debug.Log($"{gameObject.name} fell over"); // confirm detection
 
             
-            if (gameManager != null)
-            {
-                gameManager.AddPinDown();
+           // if (gameManager != null)
+         //   {
+               // gameManager.AddPinDown();
                 pinsDown++;
                 Debug.Log(pinsDown);  
-            }
+           // }
             StartCoroutine(SpawnDelay());
             
         }
