@@ -1,0 +1,83 @@
+ 
+
+ 
+
+How to Play – 
+
+ 
+
+Objective is to get a score of 300 or above. 
+
+Knock down all ten pins in one shot for a strike, or ten in two shots for a spare. 
+
+Use the A and D keys to position where to throw the ball from. 
+
+Hold down Space key to charge up the ball, which is determined by the power slider. 
+
+Let go of space key to launch the ball. 
+
+ 
+
+A link to the public repository- 
+
+https://github.com/mutant646/10-pin-bowling.git 
+
+ 
+
+A list of features and scripts each student is responsible for developing (Follow excel 
+spreadsheet template on MLS) 
+
+ 
+
+GitHub repository – Lewis Brown 
+
+Imported asset – Lewis Brown 
+
+Removing pins after 1st shot – Lewis Brown 
+
+Create vector for bowling Ball  – Danny Harrison 
+
+Respawn ball after shot  – Danny Harrison 
+
+Keep score of pins – Danny Harrison 
+
+Display score – Danny Harrison 
+
+Mark spares and strikes – Lewis Brown 
+
+ 
+
+Scripts – 
+
+ 
+
+activate_bumpers.cs – Lewis Brown 
+
+cameraControl.cs – Lewis Brown 
+
+charging.cs – Lewis Brown 
+
+GameManager.cs – Danny Harrison 
+
+pinReplacing.cs – Danny Harrison 
+
+rolling.cs – Lewis Brown 
+
+ 
+·  A statement on any assets or code that is not the work of the student 
+
+ The assets for the pin. 
+
+ 
+· A statement on AI usage 
+
+ 
+
+We confirm that no artificial intelligence tools were used in the research and creation of our project and all content is our own work. 
+
+ 
+A short statement from each student (max. 300 words) about an interesting problem they solved, or an interesting solution they devised, as part of their work. 
+
+ 
+
+Danny -  When I was writing the code for the game manager, I ran into a problem where the ball would sometimes get stuck on the lane and not hit any pins, or it wouldn’t hit any pins and the game would think that the round was still going on, making it unable to progress. To fix this I added a check using a coroutine called CheckBallStopped(). After a small delay it checks the balls speed (if it has dropped below a certain threshold). The solution was easy but it made a big difference in the gameplay and I am happy with myself that I managed to sort it. It made sure that the game moved smoothly, even if the ball didn't hit any pins. 
