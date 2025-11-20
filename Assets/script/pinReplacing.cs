@@ -1,9 +1,11 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Pin : MonoBehaviour
 {
-
+    public int pinsDown;
+    public round_management Manager;
     public Vector3 startPosition;
     public Quaternion startRotation;
     private bool hasFallen = false;
@@ -25,6 +27,14 @@ public class Pin : MonoBehaviour
        
     }
 
+    private IEnumerator SpawnDelay()
+    {
+        Debug.Log("start waiting");
+        yield return new WaitForSeconds(3);
+        Debug.Log("waiting done");
+        transform.position = startPosition + new Vector3(-4f, 0.0f, 0.0f);
+        transform.rotation = startRotation;
+    }
     void Update()
     {
 
@@ -38,20 +48,26 @@ public class Pin : MonoBehaviour
             if (gameManager != null)
             {
                 gameManager.AddPinDown();
+                pinsDown++;
+                Debug.Log(pinsDown);  
             }
-           
+            StartCoroutine(SpawnDelay());
+            
         }
 
-    }
 
-    public void ResetPin()
-    {
-       
-        hasFallen = false;
-        transform.position = startPosition;
-        transform.rotation = startRotation;
-        Rigidbody rb = GetComponent<Rigidbody>();
-        rb.linearVelocity = Vector3.zero;
-        rb.angularVelocity = Vector3.zero;
+
+        if (Manager.resetPins == true)
+        {
+            Debug.Log("check check");
+            hasFallen = false;
+            pinsDown = 0;
+            for (int i = 1; i < 11; i++) {
+                transform.position = startPosition;
+            transform.rotation = startRotation;
+        }
+            
+            Manager.resetPins = false;
+        }
     }
 }

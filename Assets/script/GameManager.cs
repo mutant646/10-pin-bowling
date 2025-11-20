@@ -89,7 +89,7 @@ public class GameManager : MonoBehaviour
 
         foreach (Pin pin in Object.FindObjectsByType<Pin>(FindObjectsSortMode.None))
         {
-            pin.ResetPin();
+           // pin.NewRound();
         }
     }
 

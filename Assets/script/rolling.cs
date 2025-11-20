@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEditor.U2D;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 public class rolling : MonoBehaviour
 {
+    public Pin pins;
+    public cameraControl cam;
+    public round_management management;
     public charging charging;
     public float speed = 0;
     private Rigidbody rb;
@@ -18,7 +22,7 @@ public class rolling : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+  void Update()
     {
         if (speed == 0)
         {
@@ -26,8 +30,8 @@ public class rolling : MonoBehaviour
             {
                 if (AngleY > -0.3f)
                 {
-                    AngleY -= 0.006f;
-                    transform.Rotate(new Vector3(0, -1f, 0));
+                    AngleY -= 0.003f;
+                    transform.Rotate(new Vector3(0, -0.5f, 0));
                 }
             }
             if (Input.GetKey(KeyCode.A))
@@ -38,8 +42,8 @@ public class rolling : MonoBehaviour
             {
                 if (AngleY < 0.3f)
                 {
-                    AngleY += 0.006f;
-                    transform.Rotate(new Vector3(0, 1f, 0));
+                    AngleY += 0.003f;
+                    transform.Rotate(new Vector3(0, 0.5f, 0));
                 }
             }
             if (Input.GetKey(KeyCode.D))
@@ -48,7 +52,33 @@ public class rolling : MonoBehaviour
             }
         }
     }
+   public IEnumerator NextThrow()
+    {
+        yield return new WaitForSeconds(10);
+        rb.linearVelocity = Vector3.zero;
+        rb.angularVelocity = Vector3.zero;
+        transform.position = new Vector3(-6.619f, 0.108f, 0);
 
+        if (management.secondThrow == true)
+        {
+            management.secondThrow = false;
+            management.round++;
+            management.resetPins = true;
+        }
+        else if (pins.pinsDown == 10)
+        {
+            management.secondThrow = false;
+            management.round++;
+            management.resetPins = true;
+        }
+        else 
+        { management.secondThrow = true;
+           
+            cam.transform.position = transform.position + cam.offset;
+            speed = 0;
+        }
+        charging.powerSlider.value = 0;
+    }
     public void StartingRoll()
     {
         speed = charging.freezeCharge;           
@@ -57,8 +87,8 @@ public class rolling : MonoBehaviour
         Debug.Log(bowl);
         Debug.Log(speed);
         rb.AddForce(bowl * speed * 10);
-            Debug.Log("Vector applied.");     
-            
+            Debug.Log("Vector applied.");
+        StartCoroutine(NextThrow());
        
     }    
         
@@ -69,6 +99,6 @@ public class rolling : MonoBehaviour
     {
         transform.position = new Vector3(-10, 0, 0);
     }
-   
+    
 
 }

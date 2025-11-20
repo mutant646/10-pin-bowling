@@ -5,10 +5,12 @@ using System.Runtime.CompilerServices;
 using JetBrains.Annotations;
 using Unity.VisualScripting;
 using static UnityEngine.Rendering.DebugUI;
+using UnityEngine.UIElements;
 
 public class charging : MonoBehaviour
 {
-    private Slider powerSlider;
+    public round_management manager;
+    public UnityEngine.UI.Slider powerSlider;
     private float charge = 0.1f;
     public float freezeCharge;
     private bool Charging;
@@ -19,13 +21,15 @@ public class charging : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        powerSlider = GetComponent<Slider>(); 
+        powerSlider = GetComponent<UnityEngine.UI.Slider>(); 
         powerSlider.value = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        if (rolling.speed == 0) { 
        bool spaceBarPressed = Input.GetKeyDown(KeyCode.Space);
         bool spaceBarUp = Input.GetKeyUp(KeyCode.Space);
         if (spaceBarPressed)
@@ -42,7 +46,6 @@ public class charging : MonoBehaviour
                 freezeCharge = powerSlider.value; 
                 rolling.StartingRoll();
                 Debug.Log("charging stopped. sending ball.");
-                    powerSlider.value = 0;
             }
         }
 
@@ -54,7 +57,7 @@ public class charging : MonoBehaviour
                 if (powerSlider.value > 2.5)
                 {
                     atTop = true;
-                    
+
                     powerSlider.value -= 0.02f;
                 }
             }
@@ -67,7 +70,9 @@ public class charging : MonoBehaviour
                     powerSlider.value += 0.02f;
                 }
             }
-
+        
+            }
         }
     }
+  
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 public class cameraControl : MonoBehaviour
 {
     public GameObject bowlingBall;
-    private Vector3 offset;
+    public Vector3 offset;
  
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,6 +23,10 @@ public class cameraControl : MonoBehaviour
 
         }
 
+    }
+    public void NewRound()
+    {
+        transform.position = bowlingBall.transform.position + offset;
     }
     void LateUpdate()
     {
